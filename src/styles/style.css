@@ -1,0 +1,60 @@
+@import url("https://use.typekit.net/ggp2enf.css");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #aaa;
+  font-family: hobo-std, sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: auto 1fr 1fr 100px;
+  height: 100vh;
+}
+
+.footer {
+  background: #a00;
+}
+
+.header {
+  align-items: center;
+  justify-items: center;
+  background: #111;
+  color: #eee;
+  display: grid;
+  gap: 16px;
+  grid-template-rows: 1fr 1fr;
+  padding: 8px;
+}
+
+.hero {
+  background: #eee;
+}
+
+.info {
+  background: #ccc;
+}
+
+.logo {
+  font-family: hobo-std, sans-serif;
+  font-size: 2.3rem;
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.4rem;
+  gap: 24px;
+  justify-content: center;
+}
+
+.nav > li:hover {
+  color: #d33;
+  cursor: pointer;
+  font-weight: bold;
+  scale: 1.1;
+}
