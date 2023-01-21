@@ -11,8 +11,10 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: auto 1fr 1fr 100px;
+  grid-template-rows: auto 3fr 2fr 100px;
   height: 100vh;
+  margin: auto;
+  max-width: 1200px;
 }
 
 .footer {
@@ -22,8 +24,8 @@ body {
 .header {
   align-items: center;
   justify-items: center;
-  background: #111;
-  color: #eee;
+  background: #211;
+  color: #eec;
   display: grid;
   gap: 16px;
   grid-template-rows: 1fr 1fr;
@@ -31,7 +33,30 @@ body {
 }
 
 .hero {
-  background: #eee;
+  align-items: end;
+  background: url("../images/trailer.jpg");
+  background-attachment: local;
+  background-position: top right;
+  background-position-y: -160px;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  padding: 24px;
+}
+
+.hero a button {
+  background: #a00;
+  border: 2px solid #eee;
+  border-radius: 48px;
+  color: #eed;
+  cursor: pointer;
+  font-size: 3rem;
+  padding: 16px 32px 16px 32px;
+}
+
+.hero a button:hover {
+  background: #ccc;
+  color: #a00;
 }
 
 .info {

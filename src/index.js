@@ -41,6 +41,12 @@ function drawLayout() {
   const hero = document.createElement('div');
   hero.className = 'hero';
 
+  const link = document.createElement('a');
+  link.setAttribute('target', '_blank');
+  link.setAttribute('href', 'https://ribtown-bar-b-que.square.site/');
+  const button = document.createElement('button');
+  button.textContent = 'Order Here';
+
   // Current info section
   const info = document.createElement('div');
   info.className = 'info';
@@ -59,6 +65,8 @@ function drawLayout() {
   nav.appendChild(food);
   nav.appendChild(contact);
   container.appendChild(hero);
+  hero.appendChild(link);
+  link.appendChild(button);
   container.appendChild(info);
   container.appendChild(footer);
   body.appendChild(container);
