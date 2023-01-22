@@ -1,7 +1,7 @@
 import facebookIcon from './images/facebook.svg';
 import instaIcon from './images/instagram.svg';
 
-function drawFooter() {
+export default function drawFooter() {
   const container = document.querySelector('.container');
 
   const footer = document.createElement('div');
@@ -57,5 +57,3 @@ function drawFooter() {
   instaLink.appendChild(instaImage);
   footerGrid.appendChild(footerAttrib);
 }
-
-export default drawFooter;

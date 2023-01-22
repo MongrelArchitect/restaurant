@@ -1,6 +1,6 @@
 export default function drawHome() {
   const content = document.querySelector('.content');
-  content.classList.add('home');
+  content.className = 'content home';
   content.innerHTML = '';
 
   // Hero image section

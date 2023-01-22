@@ -4,6 +4,7 @@ import './styles/style.css';
 import drawHeader from './header';
 import drawHome from './home';
 import drawFooter from './footer';
+import navigate from './navigate';
 
 function drawPage() {
   // Set up the whole page
@@ -20,3 +21,4 @@ function drawPage() {
 }
 
 drawPage();
+navigate();
