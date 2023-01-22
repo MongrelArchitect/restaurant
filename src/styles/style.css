@@ -1,24 +1,77 @@
-@import url("https://use.typekit.net/ggp2enf.css");
+@import url('https://use.typekit.net/ggp2enf.css');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 * {
   box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
 }
 
 body {
-  background: #aaa;
-  font-family: hobo-std, sans-serif;
+  background: #988;
 }
 
 .container {
   display: grid;
-  grid-template-rows: auto 3fr 2fr 100px;
-  height: 100vh;
+  box-shadow: 0 0 5px #222;
+  grid-template-rows: auto 400px auto 80px;
   margin: auto;
   max-width: 1200px;
+  min-height: 100vh;
 }
 
 .footer {
   background: #a00;
+  box-shadow: 0 -2px 4px #111;
+  color: #eec;
+  display: flex;
+  font-family: Ubuntu, sans-serif;
+  justify-content: center;
+  padding: 8px;
+}
+
+.footer-grid {
+  align-items: center;
+  display: grid;
+  gap: 8px;
+  grid-template: 1fr 1fr / 2fr 1fr;
+  justify-items: center;
+  width: 90%;
+  max-width: 500px
+}
+
+.footer .address-list {
+  font-size: 1.1rem;
+  font-weight: bold;
+  justify-self: start;
+}
+
+.footer .social-list {
+  display: flex;
+  gap: 16px;
+  justify-self: end;
+}
+
+.footer a {
+  color: #eec;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #ccc;
+}
+
+.footer img {
+  height: 30px;
+}
+
+.footer img:hover {
+  scale: 1.1;
+  filter: invert(20%);
+}
+
+.footer-attrib {
+  grid-area: 2 / 1 / 3 / 4;
 }
 
 .header {
@@ -27,6 +80,7 @@ body {
   background: #211;
   color: #eec;
   display: grid;
+  font-family: hobo-std, sans-serif;
   gap: 16px;
   grid-template-rows: 1fr 1fr;
   padding: 8px;
@@ -34,14 +88,16 @@ body {
 
 .hero {
   align-items: end;
-  background: url("../images/trailer.jpg");
+  background: url('../images/trailer.jpg');
   background-attachment: local;
   background-position: top right;
   background-position-y: -160px;
   background-repeat: no-repeat;
+  box-shadow: 0 2px 4px #111;
   display: flex;
   justify-content: center;
   padding: 24px;
+  position: relative;
 }
 
 .hero a button {
@@ -60,7 +116,26 @@ body {
 }
 
 .info {
-  background: #ccc;
+  align-items: center;
+  background: #eed;
+  display: flex;
+  font-family: Ubuntu, sans-serif;
+  font-size: 1.4rem;
+  justify-content: center;
+  padding: 16px;
+}
+
+.info p {
+  color: #a00;
+  font-weight: bold;
+  line-height: 1.1;
+  max-width: 500px;
+  min-width: 320px;
+}
+
+.info strong {
+  color: #111;
+  font-weight: bold;
 }
 
 .logo {
@@ -72,13 +147,13 @@ body {
 .nav {
   display: flex;
   flex-wrap: wrap;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   gap: 24px;
   justify-content: center;
 }
 
 .nav > li:hover {
-  color: #d33;
+  color: #c22;
   cursor: pointer;
   font-weight: bold;
   scale: 1.1;
