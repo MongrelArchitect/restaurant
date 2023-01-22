@@ -1,5 +1,9 @@
-@import url('https://use.typekit.net/ggp2enf.css');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+@font-face {
+  font-family: 'hobo-std';
+  src: url('../fonts/hobo-std.otf');
+}
 
 * {
   box-sizing: border-box;
@@ -13,10 +17,18 @@ body {
 .container {
   display: grid;
   box-shadow: 0 0 5px #222;
-  grid-template-rows: 100px 400px auto 80px;
+  grid-template-rows: 100px auto 80px;
   margin: auto;
   max-width: 1200px;
   min-height: 100vh;
+}
+
+.content {
+  display: grid;
+}
+
+.content.home {
+  grid-template-rows: 400px auto;
 }
 
 .footer {
