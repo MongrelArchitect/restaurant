@@ -56,6 +56,33 @@ body {
   height: 240px;
 }
 
+.contact-hero {
+  background: url('../images/pies.jpg');
+  background-attachment: local;
+  background-position: center;
+  background-position-y: -64px;
+  background-repeat: no-repeat;
+  background-size: 1200px;
+  box-shadow: 0 2px 4px #111;
+  position: relative;
+}
+
+.contact-info {
+  align-items: center;
+  background: #eec;
+  display: flex;
+  font-family: Ubuntu, sans-serif;
+  font-size: 1.4rem;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+}
+
+.contact-info h3 {
+  color: #a00;
+  font-weight: bold;
+}
+
 .container {
   display: grid;
   box-shadow: 0 0 5px #222;
@@ -96,7 +123,8 @@ body {
 }
 
 .content.home,
-.content.food {
+.content.food,
+.content.contact {
   grid-template-rows: 350px auto;
 }
 
@@ -107,7 +135,6 @@ body {
   background-position-y: -64px;
   background-repeat: no-repeat;
   background-size: 1200px;
-  box-shadow: 0 2px 4px #111;
   box-shadow: 0 2px 4px #111;
   position: relative;
 }
