@@ -31,7 +31,7 @@ export default function loadAbout() {
   lonnieImage.src = Lonnie;
   lonnieImage.setAttribute('alt', 'Pitmaster Lonnie Edwards');
   const aboutLonnieText = document.createElement('p');
-  aboutLonnieText.textContent = 'Lonnie has been smoking wood fueled barbecue since the age of 10, when his Auntie Punkin asked for help to finish off five racks of ribs on her tiny backyard grill. This sparked a passion for barbecue that has rapidly evolved over the years, and Lonnie has spent countless hours looking for ways to improve his craft. To this day, Lonnie is proud to answer the question "what type of barbecue do you serve?" with a simple yet complex answer: "real barbecue."';
+  aboutLonnieText.textContent = 'Lonnie has been cooking wood fueled barbecue since the age of 10, when his Auntie Punkin asked for help to finish off five racks of ribs on her tiny backyard grill. This sparked a passion for barbecue that has rapidly evolved over the years, and Lonnie has spent countless hours looking for ways to improve his craft. To this day, Lonnie is proud to answer the question "what type of barbecue do you serve?" with a simple yet complex answer: "real barbecue."';
 
   content.appendChild(heading);
   content.appendChild(aboutRibtown);
